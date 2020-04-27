@@ -1,7 +1,7 @@
 module.exports = {
   dialect: 'postgres',
   host: 'localhost',
-  port: 5432,
+  port: 5433,
   usernae: 'postgres',
   password: 'docker',
   database: 'gobarber',
@@ -9,6 +9,5 @@ module.exports = {
     timestamps: true,
     underscored: true,
     underscoredAll: true,
-    // Add comments
   },
 };
