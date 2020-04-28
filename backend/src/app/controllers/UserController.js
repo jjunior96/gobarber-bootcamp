@@ -40,6 +40,7 @@ class UserController {
         .when('oldPassword', (oldPassword, field) =>
           oldPassword ? field.required() : field
         ),
+      // Update password, user need of confirmation
       confirmPassword: Yup.string().when('password', (password, field) =>
         password ? field.required().oneOf([Yup.ref('password')]) : field
       ),
