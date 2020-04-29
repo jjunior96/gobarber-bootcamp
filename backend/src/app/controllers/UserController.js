@@ -56,7 +56,7 @@ class UserController {
 
     if (email && email !== user.email) {
       const userExists = await User.findOne({
-        where: { email: req.body.email },
+        where: { email },
       });
 
       if (userExists) {
